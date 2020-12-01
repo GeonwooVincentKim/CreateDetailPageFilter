@@ -45,15 +45,17 @@ class _CreateChildState extends State<CreateChild> {
   Widget _buildCreateChildBody(){
     return Container(
       padding: EdgeInsets.all(50.0),
-      child: Form(
-        key: _childFormKey,
-        child: Column(
-          children: [
-            _buildParentsList(),
-            _buildCreateChildName(),
-            _buildCreateChildPrices(),  
-            _buildYearMonthList(),
-          ]
+      child: SingleChildScrollView(
+        child: Form(
+          key: _childFormKey,
+          child: Column(
+            children: [
+              _buildParentsList(),
+              _buildCreateChildName(),
+              _buildCreateChildPrices(),  
+              _buildYearMonthList(),
+            ]
+          ),
         ),
       ),
     );
