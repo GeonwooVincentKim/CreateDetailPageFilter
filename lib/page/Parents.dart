@@ -1,5 +1,5 @@
 import 'package:ListDepthLevel/model/List.dart';
-import 'package:ListDepthLevel/page/attribute/ParentsListTile.dart';
+import 'package:ListDepthLevel/attribute/ParentsListTile.dart';
 import 'package:ListDepthLevel/page/sidemenu.dart';
 import 'package:ListDepthLevel/provider/ListProvider.dart';
 import 'package:flutter/material.dart';

@@ -1,7 +1,9 @@
 import 'package:ListDepthLevel/model/List.dart';
 import 'package:ListDepthLevel/page/Parents.dart';
 import 'package:ListDepthLevel/page/child.dart';
+import 'package:ListDepthLevel/attribute/page_attribute/create_parents.dart';
 import 'package:ListDepthLevel/page/detail.dart';
+import 'package:ListDepthLevel/page/page_attribute/create_childs.dart';
 import 'package:ListDepthLevel/provider/ListProvider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -20,8 +22,8 @@ class MyApp extends StatelessWidget{
         initialRoute: "/",
         routes: {
           "/": (context) => Parents(),
-          "/createParents": (context) => Parents(),
-          "/createChilds": (context) => Parents(),
+          "/createParents": (context) => CreateParents(),
+          "/createChilds": (context) => CreateChild(),
         },
         onGenerateRoute: (RouteSettings settings){
           final List<String> pathElements = settings.name.split("/");
@@ -32,6 +34,9 @@ class MyApp extends StatelessWidget{
           }else if(pathElements[1] == 'child'){
             String levelID = pathElements[2];
             return MaterialPageRoute(builder: (BuildContext context) => Detail(detailID: levelID));
+          }else if(pathElements[1] == 'filter'){
+            String levelID = pathElements[2];
+            return MaterialPageRoute(builder: (BuildContext context) => Child(childID: levelID)); // Gonna change this
           }
         },
         onUnknownRoute: (RouteSettings settings){

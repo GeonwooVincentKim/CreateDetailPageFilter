@@ -1,5 +1,5 @@
 import 'package:ListDepthLevel/model/List.dart';
-import 'package:ListDepthLevel/page/attribute/childListTile.dart';
+import 'package:ListDepthLevel/attribute/childListTile.dart';
 import 'package:ListDepthLevel/page/sidemenu.dart';
 import 'package:ListDepthLevel/provider/ListProvider.dart';
 import 'package:flutter/material.dart';
@@ -29,8 +29,11 @@ class _ChildState extends State<Child> {
 
   Widget _buildChildAppBar(){
     return AppBar(
-      title: Text(widget.childID),
+      title: Text(listTypes.name),
       centerTitle: true,
+      actions: [
+        
+      ],
     );
   }
 
