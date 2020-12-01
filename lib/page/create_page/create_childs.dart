@@ -1,3 +1,4 @@
+import 'package:ListDepthLevel/attribute/dropdown_date_format.dart';
 import 'package:ListDepthLevel/attribute/dropdownbuttonlist.dart';
 import 'package:ListDepthLevel/model/List.dart';
 import 'package:ListDepthLevel/page/sidemenu.dart';
@@ -51,6 +52,7 @@ class _CreateChildState extends State<CreateChild> {
             _buildParentsList(),
             _buildCreateChildName(),
             _buildCreateChildPrices(),  
+            _buildYearMonthList(),
           ]
         ),
       ),
@@ -101,6 +103,13 @@ class _CreateChildState extends State<CreateChild> {
           )
         ]
       )
+    );
+  }
+
+  Widget _buildYearMonthList(){
+    return DropDownDateFormat(
+      dateFormKey: _childFormKey,
+      listModelData: listModel,
     );
   }
 
