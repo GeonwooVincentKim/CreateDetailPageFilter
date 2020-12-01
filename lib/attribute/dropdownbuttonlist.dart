@@ -5,7 +5,7 @@ class DropDownButtonList extends StatelessWidget {
   final Widget hint;
   final String value;
   final Function onChanged;
-  final List<dynamic> items;
+  final List<String> items;
 
   DropDownButtonList({
     this.hint,

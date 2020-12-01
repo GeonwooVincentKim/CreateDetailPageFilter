@@ -28,4 +28,15 @@ class ListModel{
       children: list.children ?? [],
     );
   }
+
+  factory ListModel.fromChildMap(Map<String, dynamic> childList){
+    return ListModel(
+      listID: childList['listID'] ?? '',
+      name: childList['name'] ?? '',
+      prices: childList['prices'] ?? 0,
+      year: childList['year'] ?? '',
+      month: childList['month'] ?? '',
+      children: childList['children'] ?? []
+    );
+  }
 }

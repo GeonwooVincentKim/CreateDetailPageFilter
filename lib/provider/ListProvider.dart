@@ -33,4 +33,11 @@ class ListProvider with ChangeNotifier{
     _listModelList.add(createList);
     notifyListeners();
   }
+
+  void createListChildMap(Map<String, dynamic> childList){
+    childList['listID'] = getGenerateString(2);
+    final ListModel createChildList = ListModel.fromChildMap(childList);
+    _listModelList.add(createChildList);
+    notifyListeners();
+  }
 }
