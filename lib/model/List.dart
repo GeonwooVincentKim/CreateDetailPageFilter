@@ -18,7 +18,7 @@ class ListModel{
     return ListModel(
       listID: list.listID ?? '',
       name: list.name ?? '',
-      prices: list.prices ?? '',
+      prices: list.prices ?? 0,
       children: list.children ?? [],
     );
   }

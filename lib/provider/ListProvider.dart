@@ -6,7 +6,7 @@ import 'package:provider/provider.dart';
 
 
 class ListProvider with ChangeNotifier{
-  ListModel list; // Main
+  ListModel menulist; // Main
   ListModel detailList; // Sub
   List<ListModel> _listModelList = [list1, list2, list3, list4].toList();
   List<ListModel> _listModelEmptyList = [];
@@ -15,10 +15,10 @@ class ListProvider with ChangeNotifier{
   List<ListModel> get emptyList => [..._listModelEmptyList];
   
   ListModel get selectedDetailList => detailList != null ? ListModel.fromNonMap(selectedDetailList) : null;
-  ListModel get selectedList => list;
+  ListModel get selectedList => menulist;
 
   void selectList(ListModel list){
-    list = list;
+    menulist = list;
     notifyListeners();
   }
 

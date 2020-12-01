@@ -19,7 +19,7 @@ class _ChildState extends State<Child> {
 
   @override
   void initState(){
-    listTypes = Provider.of<ListProvider>(context, listen: false).list;
+    listTypes = Provider.of<ListProvider>(context, listen: false).menulist;
     if(listTypes == null){
       final List<ListModel> listTitle = Provider.of<ListProvider>(context, listen: false).listModelList;
       listTypes = listTitle.firstWhere((child) => child.listID == widget.childID);
@@ -41,12 +41,14 @@ class _ChildState extends State<Child> {
         builder: (ctx, childList, child){
           ListModel listMenu = Provider.of<ListProvider>(context, listen: false).selectedList;
           final List<ListModel> childName = listMenu.children;
+          print(listMenu.children);
 
           print(childName.length);
           return childName.length == 0 || childName.length == null || childName.isEmpty ?
             Container():
             GridView.builder(
               shrinkWrap: true,
+              itemCount: childName.length,
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 childAspectRatio: 1.0,
