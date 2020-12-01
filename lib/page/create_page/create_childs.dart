@@ -123,4 +123,12 @@ class _CreateChildState extends State<CreateChild> {
       drawer: SideMenu(),
     );
   }
+
+  void submitForm(BuildContext context){
+    if(!_childFormKey.currentState.validate()) return;
+    _childFormKey.currentState.save();
+
+    Provider.of<ListProvider>(context).createListNonMap(listModel);
+    Navigator.pushNamed(context, "/child/${listModel.listID}");
+  }
 }
