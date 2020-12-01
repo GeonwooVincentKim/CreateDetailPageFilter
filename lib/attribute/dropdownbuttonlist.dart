@@ -1,14 +1,13 @@
-import 'package:ListDepthLevel/page/sidemenu.dart';
 import 'package:flutter/material.dart';
 
 
-class DropDownButton extends StatelessWidget {
-  final String hint;
+class DropDownButtonList extends StatelessWidget {
+  final Widget hint;
   final String value;
   final Function onChanged;
   final List<dynamic> items;
 
-  DropDownButton({
+  DropDownButtonList({
     this.hint,
     @required this.value,
     @required this.onChanged,
@@ -17,7 +16,7 @@ class DropDownButton extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    return DropDownButton(
+    return DropdownButton(
       hint: hint,
       value: value,
       onChanged: onChanged,

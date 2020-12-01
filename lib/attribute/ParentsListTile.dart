@@ -16,12 +16,7 @@ class ParentsListTile extends StatelessWidget{
         Navigator.pushNamed(context, "/parent/${parentsList.listID}");
       },
       child: Card(
-        child: Column(
-          children: [
-            Text("${parentsList.name}"),
-            // Text("${parentsList.prices}"),
-          ],
-        ),
+        child: Text("${parentsList.name}"),
       ),
     );
   } 

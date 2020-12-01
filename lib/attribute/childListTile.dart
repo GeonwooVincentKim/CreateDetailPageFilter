@@ -21,7 +21,8 @@ class ChildListTile extends StatelessWidget{
           child: Column(
             children: [
               Text("${detail.name}"),
-              Text("${detail.prices}")
+              Text("${detail.prices}"),
+              Text("${detail.year} / ${detail.month}")
             ],
           ),
         ),

@@ -1,3 +1,4 @@
+import 'package:ListDepthLevel/attribute/dropdownbuttonlist.dart';
 import 'package:ListDepthLevel/model/List.dart';
 import 'package:ListDepthLevel/page/sidemenu.dart';
 import 'package:ListDepthLevel/provider/ListProvider.dart';
@@ -58,7 +59,15 @@ class _CreateChildState extends State<CreateChild> {
 
 
   Widget _buildParentsList(){
-    return Container(); 
+    return DropDownButtonList(
+      value: listModel.name,
+      onChanged: (String value){
+        setState(() {
+          listModel.name = value;
+        });
+      },
+      items: childrenList
+    );
   }
 
   Widget _buildCreateChildName(){

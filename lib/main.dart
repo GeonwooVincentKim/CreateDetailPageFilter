@@ -1,9 +1,9 @@
 import 'package:ListDepthLevel/model/List.dart';
 import 'package:ListDepthLevel/page/Parents.dart';
 import 'package:ListDepthLevel/page/child.dart';
-import 'package:ListDepthLevel/attribute/page_attribute/create_parents.dart';
+import 'package:ListDepthLevel/page/create_page/create_childs.dart';
+import 'package:ListDepthLevel/page/create_page/create_parents.dart';
 import 'package:ListDepthLevel/page/detail.dart';
-import 'package:ListDepthLevel/page/page_attribute/create_childs.dart';
 import 'package:ListDepthLevel/provider/ListProvider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

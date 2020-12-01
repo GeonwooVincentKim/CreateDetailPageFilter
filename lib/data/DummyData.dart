@@ -6,24 +6,28 @@ var subMenu1 = [
     listID: 'list11',
     name: 'list11',
     prices: 1000,
+    year: '2016'
   ),
 
   ListModel(
     listID: 'list12',
     name: 'list12',
     prices: 2000,
+    year: '2017'
   ),
 
   ListModel(
     listID: 'list13',
     name: 'list13',
     prices: 3000,
+    year: '2018'
   ),
   
   ListModel(
     listID: 'list14',
     name: 'list14',
-    prices: 4000
+    prices: 4000,
+    year: '2020'
   )
 ].toList();
 
@@ -32,24 +36,28 @@ var subMenu2 = [
     listID: 'list21',
     name: 'list21',
     prices: 1000,
+    year: '2016'
   ),
 
   ListModel(
     listID: 'list22',
     name: 'list22',
     prices: 2000,
+    year: '2017'
   ),
 
   ListModel(
     listID: 'list23',
     name: 'list23',
     prices: 3000,
+    year: '2020/03'
   ),
   
   ListModel(
     listID: 'list24',
     name: 'list24',
-    prices: 4000
+    prices: 4000,
+    year: '2020'
   )
 ].toList();
 
@@ -58,24 +66,28 @@ var subMenu3 = [
     listID: 'list31',
     name: 'list31',
     prices: 1000,
+    year: '2020'
   ),
 
   ListModel(
     listID: 'list32',
     name: 'list32',
     prices: 2000,
+    year: '2020'
   ),
 
   ListModel(
     listID: 'list33',
     name: 'list33',
     prices: 3000,
+    year: '2020/03'
   ),
   
   ListModel(
     listID: 'list34',
     name: 'list34',
-    prices: 4000
+    prices: 4000,
+    year: '2020'
   )
 ].toList();
 
@@ -84,24 +96,28 @@ var subMenu4 = [
     listID: 'list41',
     name: 'list41',
     prices: 1000,
+    year: '2020'
   ),
 
   ListModel(
     listID: 'list42',
     name: 'list42',
     prices: 2000,
+    year: '2020'
   ),
 
   ListModel(
     listID: 'list43',
     name: 'list43',
     prices: 3000,
+    year: '2020/03'
   ),
   
   ListModel(
     listID: 'list44',
     name: 'list44',
-    prices: 4000
+    prices: 4000,
+    year: '2020'
   )
 ].toList();
 
