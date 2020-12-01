@@ -28,7 +28,7 @@ class _DropDownDateFormatState extends State<DropDownDateFormat> {
     }
     // ignore: unrelated_type_equality_checks
     if(widget.listModelData == '')
-      widget.listModelData.date = yearList[yearList.length - 1];
+      widget.listModelData.year = yearList[yearList.length - 1];
     super.initState();
   }
 
